@@ -1,3 +1,19 @@
+@media only screen and (max-width : 1600px) {
+    .page-bankruptcy-first{
+        background: url(../images/first-bg.jpg) no-repeat center center;
+    }
+}
+
+
+
+@media only screen and (max-width : 1400px) {
+    .page-bankruptcy-results-of-work-link-more{
+        margin-right: 60px;
+    }
+}
+
+
+
 @media only screen and (max-width : 1240px) {
     .container{
         width: auto;
@@ -43,7 +59,11 @@
     .page-bankruptcy-profit-list-item{
         width: calc(100% / 3 - 20px * 2 / 3);
         margin-right: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
+    }
+
+    .page-bankruptcy-results-of-work-list-item{
+        margin-bottom: 120px;
     }
 
     .page-bankruptcy-profit-list-item:nth-of-type(3n),
@@ -94,19 +114,41 @@
     }
 
     .page-bankruptcy-form{
-        margin-bottom: 100px;
+        // margin-bottom: 100px;
+    }
+
+    .page-bankruptcy-form-info{
+        padding-left: 20px;
+    }
+
+    .page-bankruptcy-form-inputs{
+        margin-right: 20px;
     }
 
     .page-bankruptcy-form-info__title{
         font-size: 36px;
     }
 
+    .page-bankruptcy-form-info__title br{
+        display: none;
+    }
+
     .page-bankruptcy-form-info__text{
         font-size: 20px;
     }
 
+    .page-bankruptcy-form-inputs::before{
+        display: none;
+    }
+
     .page-bankruptcy-aftermath{
         margin-bottom: 100px;
+    }
+
+    .page-bankruptcy-aftermath .container{
+        padding-left: 20px;
+        padding-right: 20px;
+        background: url(../images/ico-aftermath.png) no-repeat right 0px bottom 0 #006680;
     }
 
     .page-bankruptcy-aftermath__title{
@@ -120,25 +162,144 @@
     .page-bankruptcy-aftermath__lasttext{
         font-size: 26px;
     }
+
+    .page-bankruptcy-by-yourself {
+        margin-bottom: 100px;
+    }
+
+    .page-bankruptcy-by-yourself .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page-bankruptcy-by-yourself-list ul li{
+        padding-left: 36px;
+    }
+
+    .page-bankruptcy-by-yourself-we{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page-bankruptcy-keys {
+        margin-bottom: 100px;
+    }
+    
 }
 
 
 
 @media only screen and (max-width : 1080px) {
+    .page-bankruptcy-guarantees-item-special{
+        background-size: 180px auto;
+    }
+    
+
+    .page-bankruptcy-keys-tabs-content-item__text{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .page-bankruptcy-keys-tabs-content-item__num{
+        font-size: 150px;
+    }
+
+    .page-bankruptcy-form .container{
+        background-size: auto 100%;
+        padding-bottom: 40px;
+    }
+
     .page-bankruptcy-form-info{
         padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .page-bankruptcy-form-info__title{
+        text-align: center;
     }
 
     .page-bankruptcy-form-inputs{
-        margin-right: 20px;
+        // margin-right: 20px;
+        margin-top: 0;
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    .page-bankruptcy-form-inputs::after{
+        display: none;
     }
 
     .page-bankruptcy-aftermath .container{
         padding-top: 40px;
         padding-bottom: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
+        // padding-left: 20px;
+        // padding-right: 20px;
     }
+
+    .page-bankruptcy-aftermath .container{
+        background-size: 300px auto;
+    }
+
+    .page-bankruptcy-results-of-work-list{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .page-bankruptcy-results-of-work-list-item__text{
+        font-size: 15px;
+    }
+
+    .page-bankruptcy-results-of-work-link-more{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-bankruptcy-by-yourself-title{
+        font-size: 36px;
+    }
+
+    .page-bankruptcy-by-yourself-list ul li{
+        font-size: 20px;
+        padding-left: 36px;
+    }
+
+    .page-bankruptcy-by-yourself-we::after{
+        width: 155.4px;
+        height: 178.2px;
+        background-size: 100% 100%;
+        top: -80.4px;
+        right: 34.2px;
+    }
+
+    .page-bankruptcy-by-yourself-we__title{
+        font-size: 20px;
+    }
+
+    .page-bankruptcy-by-yourself-we__text{
+        font-size: 24px;
+    }
+
+    .page-bankruptcy-special-conditions{
+        padding-top: 40px;
+    }
+
+    .page-bankruptcy-special-conditions-list{
+        padding-bottom: 40px;
+    }
+
+    .page-bankruptcy-special-conditions .container{
+        background-size: 300px auto;
+    }
+
+    .page-bankruptcy-special-conditions-title{
+        font-size: 36px;
+    }
+
+    
 }
 
 
@@ -169,6 +330,10 @@
         width: calc(100% - 40px);
         margin-left: 20px;
         margin-right: 0;
+    }
+
+    .page-bankruptcy-special-conditions .container{
+        background: none;
     }
     
 }
@@ -215,6 +380,27 @@
     .page-bankruptcy-aftermath {
         margin-bottom: 60px;
     }
+
+    .page-bankruptcy-our-team {
+        margin-bottom: 60px;
+    }
+
+    .page-bankruptcy-by-yourself {
+        margin-bottom: 60px;
+    }
+
+    .page-bankruptcy-keys {
+        margin-bottom: 60px;
+    }
+
+    .page-bankruptcy-by-yourself-title{
+        font-size: 32px;
+    }
+
+    .page-bankruptcy-special-conditions-title{
+        font-size: 32px;
+    }
+
 
 }
 
@@ -269,6 +455,32 @@
     .page-bankruptcy-your-role-item__list ul li{
         font-size: 18px;
     }
+
+    .page-bankruptcy-guarantees-item-special{
+        background-image: none;
+    }
+
+    .page-bankruptcy-by-yourself-title{
+        font-size: 28px;
+    }
+
+    .page-bankruptcy-special-conditions-title{
+        font-size: 28px;
+    }
+
+    .page-bankruptcy-by-yourself-we{
+        padding-bottom: 20px;
+    }
+
+    .page-bankruptcy-by-yourself-we::after{
+        top: auto;
+        right: auto;
+        position: relative;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 
@@ -329,8 +541,8 @@
         font-size: 24px;
     }
 
-    .page-bankruptcy-form-info__text {
-        font-size: 18px;
+    .page-bankruptcy-form-info__text p{
+        font-size: 16px;
     }
 
     .page-bankruptcy-form-inputs{
@@ -355,6 +567,59 @@
 
     .page-bankruptcy-guarantees-item-special__title{
         font-size: 24px;
+    }
+
+    .page-bankruptcy-results-of-work-list-item{
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .page-bankruptcy-results-of-work-link-more{
+        margin-top: 80px;
+    }
+    
+
+    .page-bankruptcy-your-role-item__ava {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .page-bankruptcy-aftermath .container{
+        background-image: none;
+    }
+
+    .page-bankruptcy-keys-tabs-buttons{
+        flex-wrap: wrap;
+    }
+
+    .page-bankruptcy-keys-tabs-buttons-item{
+        width: 100%;
+    }
+
+    .page-bankruptcy-keys-tabs-content-item{
+        position: relative;
+    }
+
+    .page-bankruptcy-keys-tabs-content-item__num{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 4px;
+        margin-right: 4px;
+        font-size: 20px;
+        color: #F08421;
+    }
+
+    .page-bankruptcy-by-yourself-title{
+        font-size: 24px;
+    }
+
+    .page-bankruptcy-special-conditions-title{
+        font-size: 24px;
+    }
+
+    .page-bankruptcy-special-conditions-list{
+        font-size: 16px;
     }
 }
 

@@ -2,6 +2,11 @@ body{
     font: 12px/18px "Gilroy", "Arial", "Helvetica", sans-serif;
 }
 
+.common__body{
+    font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
+}
+
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -54,7 +59,9 @@ body{
 }
 
 .page-bankruptcy-first {
-    background: url(../images/first-bg.jpg) no-repeat center center;
+    background:
+        url(../images/first-rf.png) no-repeat right center,
+        url(../images/first-bg.jpg) no-repeat center center;
     padding-top: 116px;
     padding-bottom: 64px;
     margin-bottom: 152px;
@@ -119,17 +126,57 @@ body{
     box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
     border-radius: 5px;
     padding-bottom: 21px;
+    position: relative;
+    margin-bottom: 141px;
+    
+    &::after{
+        content: ' ';
+        display: block;
+        width: 100%;
+        height: 82px;
+        background: url(../images/profit-list-item-corner.png) no-repeat center top;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        bottom: -75px;
+    }
 		&__ava {
-            height: 109px;
-            padding-top: 36px;
+            position: absolute;
+            width: 100%;
+            top: -20px;
+            left: 0;
+            // height: 109px;
+            // padding-top: 36px;
             box-sizing: border-box;
             img{
                 margin-left: auto;
                 margin-right: auto;
             }
+
+            .page-bankruptcy-profit-list-item_1 & {
+                margin-top: -41px;
+            }
+
+            .page-bankruptcy-profit-list-item_2 & {
+                margin-top: -20px;
+            }
+
+            .page-bankruptcy-profit-list-item_3 & {
+                margin-top: -38px;
+            }
+
+            .page-bankruptcy-profit-list-item_4 & {
+                margin-top: -27px;
+            }
+
+            .page-bankruptcy-profit-list-item_5 & {
+                margin-top: -34px;
+            }
 		}
 
 		&__title {
+            margin-top: 111px;
+
             font-weight: 500;
             font-size: 20px;
             line-height: 1.2;
@@ -155,7 +202,7 @@ body{
 }
 .page-bankruptcy-profit-button {
     text-align: center;
-    margin-top: 67px;
+    // margin-top: 67px;
 }
 .page-bankruptcy-guarantees {
     margin-bottom: 138px;
@@ -205,7 +252,8 @@ body{
 		}
 }
 .page-bankruptcy-guarantees-item-special {
-    background: url(../images/ico-guarantees.svg) right 33px top 39px no-repeat #006680;
+    // background: url(../images/ico-guarantees.svg) right 33px top 39px no-repeat #006680;
+    background: url(../images/ico-guarantees.png) right bottom 18px no-repeat #006680;
         a{
             display: flex;
             justify-content: flex-start;
@@ -254,21 +302,28 @@ body{
             box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
         }
 
+        &__ava{
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-left: 49px;
+        }
+
 		&__title {
-            padding-top: 304px;
+            // padding-top: 304px;
             font-weight: 500;
             font-size: 30px;
             line-height: 1.166666666666667;
             color: #000000;
-            text-align: center;
+            // text-align: center;
             margin-bottom: 1.233333333333333em;
+            margin-left: 49px;
             .page-bankruptcy-your-role-item_right &{
                 color: #FFFFFF;
             }
 		}
 
 		&__list {
-            margin-left: 29px;
+            margin-left: 49px;
             ul{
                 list-style: none;
                 li{
@@ -307,21 +362,25 @@ body{
     }
 }
 .page-bankruptcy-form-info {
+    padding-top: 30px;
+    padding-bottom: 20px;
     padding-left: 70px;
     box-sizing: border-box;
 		&__title {
             font-weight: 500;
-            font-size: 45px;
+            font-size: 40px;
             line-height: 1.177777777777778;
-            color: #006680;
+            color: #131313;
             margin-bottom: 0.7333333333333333em;
 		}
 
 		&__text {
-            font-size: 24px;
-            line-height: 1.166666666666667;
-            color: #000000;
-            // margin-bottom: 0.4166666666666667em;
+            p{
+                font-size: 24px;
+                line-height: 1.166666666666667;
+                color: #000000;
+                margin-bottom: 0.7916666666666667em;
+            }
 		}
 }
 .page-bankruptcy-form-inputs {
@@ -332,10 +391,37 @@ body{
 
     width: 442px;
     box-sizing: border-box;
-    padding-top: 57px;
-    padding-bottom: 64px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     padding-left: 51px;
     padding-right: 57px;
+    position: relative;
+
+    margin-top: -40px;
+
+    &::before{
+        content: ' ';
+        display: block;
+        width: 357px;
+        height: 362px;
+        background: url(../images/form-tel.png) no-repeat center center;
+        position: absolute;
+        top: -30px;
+        left: -328px;
+    }
+
+    &::after{
+        content: ' ';
+        display: block;
+        width: 100%;
+        height: 134px;
+        background: url(../images/form-corner.png) no-repeat center top;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        bottom: -124px;
+    }
+
 		&__title {
             font-weight: 600;
             font-size: 24px;
@@ -385,7 +471,7 @@ body{
 .page-bankruptcy-aftermath {
     margin-bottom: 179px;
     .container{
-        background: #006680;
+        background: url(../images/ico-aftermath.png) no-repeat right 40px bottom 0 #006680;
         box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
         box-sizing: border-box;
         padding-top: 55px;
@@ -402,28 +488,32 @@ body{
 		}
 
 		&__text {
+            &_l1{
+                font-weight: 600;
+            }
             font-size: 24px;
             line-height: 1.166666666666667;
             color: #FFFFFF;
-            margin-bottom: 2.958333333333333em;
+            // margin-bottom: 2.958333333333333em;
 		}
 
 		&__lasttext {
-            font-weight: 500;
+            font-weight: bold;
             font-size: 30px;
             line-height: 1.166666666666667;
             color: #FFFFFF;
-            text-align: center;
-            margin-bottom: 19px;
+            // text-align: center;
+            margin-top: 1.266666666666667em;
+            margin-bottom: 1.266666666666667em;
 		}
 
 		&__button {
-            text-align: center;
+            // text-align: center;
 		}
 }
 
 .page-bankruptcy-our-team {
-    margin-bottom: 50px;
+    margin-bottom: 103px;
     .container {
         
     }
@@ -485,6 +575,351 @@ body{
             background: url(../images/quotes.svg) no-repeat left top;
 		}
 }
+
+
+.page-bankruptcy-results-of-work {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+}
+.page-bankruptcy-results-of-work-list {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    min-width: 710px;
+}
+.page-bankruptcy-results-of-work-list-item {
+    width: calc(100% / 3 - 26px * 2 / 3);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+    padding-bottom: 21px;
+    position: relative;
+    margin-bottom: 141px;
+    padding-top: 20px;
+
+    &::after{
+        content: ' ';
+        display: block;
+        width: 100%;
+        height: 82px;
+        background: url(../images/profit-list-item-corner.png) no-repeat center top;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 0;
+        bottom: -75px;
+    }
+
+		&__title {
+            font-weight: bold;
+            font-size: 50px;
+            line-height: 1;
+            letter-spacing: 0.02em;
+            color: #006680;
+            text-align: center;
+
+			&_small {
+                font-size: 0.32em;
+			}
+		}
+
+		&__text {
+            font-size: 18px;
+            line-height: 1.166666666666667;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #7C7C7C;
+            margin-top: 0.888888888888889em;
+		}
+}
+.page-bankruptcy-results-of-work-link-more {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1.0) 0s;
+    &:hover{
+        opacity: 0.7;
+    }
+    a{
+        border-radius: 100%;
+        background: #F08421;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        text-align: center;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.181818181818182;
+        text-align: center;
+        text-decoration: none;
+        color: #FFFFFF;
+        width: 209px;
+        height: 209px;
+        position: relative;
+        z-index: 2;
+        padding-top: 20px;
+        box-sizing: border-box;
+        img{
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &::before{
+        content: ' ';
+        display: block;
+        background: url(../images/link-more-pic.png) no-repeat center center;
+        width: 394px;
+        height: 259px;
+        position: absolute;
+        z-index: 1;
+        top: -96px;
+        left: 50%;
+        margin-left: -197px;
+    }
+}
+
+
+
+.page-bankruptcy-by-yourself {
+    margin-bottom: 180px;
+    .container {
+        background: #FBFBFB;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding-top: 49px;
+        padding-bottom: 44px;
+        padding-left: 40px;
+        padding-right: 39px;
+    }
+}
+.page-bankruptcy-by-yourself-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    color: #131313;
+    margin-bottom: 1.325em;
+}
+.page-bankruptcy-by-yourself-list {
+    margin-bottom: 58px;
+    ul{
+        list-style: none;
+        li{
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color: #7C7C7C;
+            padding-left: 52px;
+            background: url(../images/bullet-no.svg) no-repeat left center;
+            min-height: 29px;
+            margin-bottom: 0.7333333333333333em;
+        }
+    }
+}
+.page-bankruptcy-by-yourself-we {
+    background: #006680;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    padding-left: 44px;
+    padding-right: 44px;
+    position: relative;
+    &::after{
+        content: ' ';
+        display: block;
+        width: 259px;
+        height: 297px;
+        background: url(../images/shield.png) no-repeat center center;
+        position: absolute;
+        top: -134px;
+        right: 57px;
+    }
+		&__title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.166666666666667;
+            color: #FFFFFF;
+            margin-bottom: 0.625em;
+		}
+
+		&__text {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 1.166666666666667;
+
+            color: #FFFFFF;
+		}
+}
+
+
+
+.page-bankruptcy-keys {
+    margin-bottom: 180px;
+    .container {
+    }
+}
+.page-bankruptcy-keys-tabs {
+}
+.page-bankruptcy-keys-tabs-buttons {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+.page-bankruptcy-keys-tabs-buttons-item {
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-left: 20px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    width: calc(100% / 3);
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1.0) 0s;
+
+		&__num {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+            color: #F08421;
+            margin-bottom: 0.45em;
+            .page-bankruptcy-keys-tabs-buttons-item_active &{
+                color: #fff;
+            }
+		}
+
+		&__title {
+            font-size: 20px;
+            line-height: 23px;
+            color: #7C7C7C;
+            .page-bankruptcy-keys-tabs-buttons-item_active &{
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+        
+        &_active {
+            background: #006680;
+            border: 1px solid #006680;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.12);
+        }
+}
+.page-bankruptcy-keys-tabs-content {
+    margin-top: 42px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.page-bankruptcy-keys-tabs-content-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    &_displaynone{
+        display: none;
+    }
+		&_active {
+            // display: block;
+		}
+
+		&__text {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            color: #7C7C7C;
+            padding-left: 42px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            b{
+                font-size: 1.1em;
+            }
+		}
+
+		&__num {
+            font-weight: 600;
+            font-size: 200px;
+            line-height: 1.195;
+            letter-spacing: 0.02em;
+            color: #F3F3F3;
+            padding-right: 0.165em;
+            box-sizing: border-box;
+		}
+}
+
+
+
+.page-bankruptcy-special-conditions {
+    background: #F7F7F7;
+    padding-top: 65px;
+    .container {
+        background: url(../images/special-conditions-pic.png) no-repeat right center;
+    }
+}
+.page-bankruptcy-special-conditions-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    color: #131313;
+    margin-bottom: 1.55em;
+}
+.page-bankruptcy-special-conditions-list {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166666666666667;
+    color: #7C7C7C;
+    margin-bottom: 1.041666666666667em;
+    padding-bottom: 68px;
+
+    ul{
+        list-style: none;
+        li{
+            background: url(../images/bullet-yes.svg) no-repeat left center;
+            padding-left: 43px;
+            box-sizing: border-box;
+        }
+    }
+		&_small {
+            font-size: 0.75em;
+            margin-top: -5px;
+		}
+}
+
+.myform{
+    .input-error-red{
+        border-color: red !important;
+    }
+
+    .good-mail{
+        font-size: 16px;
+        text-align: center;
+        color: #006680;
+        line-height: 1;
+
+        .mbig{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        
+        .msmall{
+            font-size: 1em;
+        }
+    }
+}
+
 
 
 

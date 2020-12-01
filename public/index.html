@@ -18,6 +18,19 @@
     <link href="https://moepravo-online.ru/bitrix/js/main/core/css/core.min.css?15955188822854" type="text/css" rel="stylesheet" />
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- Маска для телефона -->
+    <script src="js/jquery.maskedinput.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    jQuery(function($){
+        $('input[name="tel"]').mask("+7 (999) 999 99 99");
+    });
+    </script>
+    <!-- Маска для телефона -->
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -41,7 +54,7 @@
                             списав долги от 300 000 руб.
                         </div>
                         <div class="page-bankruptcy-first-left__button">
-                            <a href="#" class="btn btn-orange">Получить консультацию</a>
+                            <a href="#" class="btn btn-orange popupActivation" data-popup="callback">Получить консультацию</a>
                         </div>
                     </div>
                     <div class="page-bankruptcy-first-right">
@@ -65,7 +78,7 @@
                     <div class="page-bankruptcy-profit-list">
                         <div class="page-bankruptcy-profit-list-item page-bankruptcy-profit-list-item_1">
                             <div class="page-bankruptcy-profit-list-item__ava">
-                                <img src="images/ico-profit-1.svg" alt="Избавим от угроз и психологического давления от коллекторов и банков">
+                                <img src="images/ico-profit-1.png" alt="Избавим от угроз и психологического давления от коллекторов и банков">
                             </div>
                             <div class="page-bankruptcy-profit-list-item__title">
                                 Угроз и психологического
@@ -82,7 +95,7 @@
                         </div>
                         <div class="page-bankruptcy-profit-list-item page-bankruptcy-profit-list-item_2">
                             <div class="page-bankruptcy-profit-list-item__ava">
-                                <img src="images/ico-profit-2.svg" alt="Избавим от растущего долга">
+                                <img src="images/ico-profit-2.png" alt="Избавим от растущего долга">
                             </div>
                             <div class="page-bankruptcy-profit-list-item__title">
                                 Растущего долга
@@ -93,7 +106,7 @@
                         </div>
                         <div class="page-bankruptcy-profit-list-item page-bankruptcy-profit-list-item_3">
                             <div class="page-bankruptcy-profit-list-item__ava">
-                                <img src="images/ico-profit-3.svg" alt="Избавим от арестов, наложенных судебными приставами ">
+                                <img src="images/ico-profit-3.png" alt="Избавим от арестов, наложенных судебными приставами ">
                             </div>
                             <div class="page-bankruptcy-profit-list-item__title">
                                 Арестов,
@@ -110,7 +123,7 @@
                         </div>
                         <div class="page-bankruptcy-profit-list-item page-bankruptcy-profit-list-item_4">
                             <div class="page-bankruptcy-profit-list-item__ava">
-                                <img src="images/ico-profit-4.svg" alt="Избавим от запрета на выезд за границу">
+                                <img src="images/ico-profit-4.png" alt="Избавим от запрета на выезд за границу">
                             </div>
                             <div class="page-bankruptcy-profit-list-item__title">
                                 Запрета на выезд
@@ -125,7 +138,7 @@
                         </div>
                         <div class="page-bankruptcy-profit-list-item page-bankruptcy-profit-list-item_5">
                             <div class="page-bankruptcy-profit-list-item__ava">
-                                <img src="images/ico-profit-5.svg" alt="Избавим от трудностей с трудоустройством">
+                                <img src="images/ico-profit-5.png" alt="Избавим от трудностей с трудоустройством">
                             </div>
                             <div class="page-bankruptcy-profit-list-item__title">
                                 Трудностей с
@@ -142,7 +155,7 @@
                         </div>
                     </div>
                     <div class="page-bankruptcy-profit-button">
-                        <a href="#" class="btn btn-orange">Избавитесь от проблем</a>
+                        <a href="#" class="btn btn-orange popupActivation" data-popup="callback">Избавитесь от проблем</a>
                     </div>
                 </div>
             </div><!-- .page-bankruptcy-profit -->
@@ -195,7 +208,7 @@
                             </div>
                         </div>
                         <div class="page-bankruptcy-guarantees-item page-bankruptcy-guarantees-item-special">
-                            <a href="#">
+                            <a href="#" class="popupActivation" data-popup="callback">
                                 <div class="page-bankruptcy-guarantees-item-special__title">
                                     <div>
                                         Закрепить условия
@@ -220,6 +233,9 @@
                     </div>
                     <div class="page-bankruptcy-your-role-content">
                         <div class="page-bankruptcy-your-role-item page-bankruptcy-your-role-item_left">
+                            <div class="page-bankruptcy-your-role-item__ava">
+                                <img src="images/role-ava-1.png" alt="Кредитный должник аватар">
+                            </div>
                             <div class="page-bankruptcy-your-role-item__title">
                                 Кредитный должник
                             </div>
@@ -233,6 +249,9 @@
                             </div>
                         </div>
                         <div class="page-bankruptcy-your-role-item page-bankruptcy-your-role-item_right">
+                            <div class="page-bankruptcy-your-role-item__ava">
+                                <img src="images/role-ava-2.png" alt="Банкрот аватар">
+                            </div>
                             <div class="page-bankruptcy-your-role-item__title">
                                 Банкрот
                             </div>
@@ -248,7 +267,7 @@
                     </div>
 
                     <div class="page-bankruptcy-your-role-button">
-                        <a href="#" class="btn btn-orange">Начать жизнь с чистого листа</a>
+                        <a href="#" class="btn btn-orange popupActivation" data-popup="callback">Начать жизнь с чистого листа</a>
                     </div>
                     
                     
@@ -261,27 +280,28 @@
                 <div class="container">
                     <div class="page-bankruptcy-form-info">
                         <div class="page-bankruptcy-form-info__title">
-                            Ответим на все вопросы 
+                            Ответим на все 
+                            <br>
+                            вопросы 
                         </div>
                         <div class="page-bankruptcy-form-info__text">
-                            - Смогу ли выезжать за границу?
-                            <br>
-                            - Как сохранить имущество?
-                            <br>
-                            - Смогу ли брать кредиты после банкротсва?
-                            <br>
-                            - А что если мне закроют только один кредит?
+                            <p>- Смогу ли выезжать за границу?</p>
+                            <p>- Как сохранить имущество?</p>
+                            <p>- Смогу ли брать кредиты после банкротсва?</p>
+                            <p>- А что если мне закроют только один кредит?</p>
                         </div>
                     </div>
                     <div class="page-bankruptcy-form-inputs">
                         <div class="page-bankruptcy-form-inputs__title">
                             Закажите бесплатную консультацию
                         </div>
-                        <input type="text" class="page-bankruptcy-form-inputs__input" name="fio" placeholder="Имя">
-                        <input type="text" class="page-bankruptcy-form-inputs__input" name="tel" placeholder="Телефон">
-                        <a href="#" class="btn btn-orange page-bankruptcy-form-inputs__submit">Консультация</a>
-                        <div class="page-bankruptcy-form-inputs__description">
-                            нажимая кнопку вы соглашаетесь согласие на обработку персональных данных
+                        <div class="myform">
+                            <input type="text" class="page-bankruptcy-form-inputs__input" name="fio" placeholder="Имя">
+                            <input type="text" class="page-bankruptcy-form-inputs__input" name="tel" placeholder="Телефон">
+                            <a href="#" class="btn btn-orange page-bankruptcy-form-inputs__submit myform-submit">Консультация</a>
+                            <div class="page-bankruptcy-form-inputs__description">
+                                нажимая кнопку вы соглашаетесь согласие на обработку персональных данных
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -295,7 +315,7 @@
                         Последствия банкротства
                     </div>
                     <div class="page-bankruptcy-aftermath__text">
-                        На основании 127 Ф-3 “О несостятельности (банкротстве)” в течение 5 лет:
+                        <span class="page-bankruptcy-aftermath__text_l1">На основании 127 Ф-3 “О несостятельности (банкротстве)” в течение 5 лет:</span>
                         <br>
                         <br>
                         -Нельзя подавать на банкротство повтороно
@@ -308,7 +328,7 @@
                         Больше ограничений - нет.
                     </div>
                     <div class="page-bankruptcy-aftermath__button">
-                        <a href="#" class="btn btn-orange">Освободиться от долгов</a>
+                        <a href="#" class="btn btn-orange popupActivation" data-popup="callback">Освободиться от долгов</a>
                     </div>
                 </div>
             </div><!-- .page-bankruptcy-aftermath -->
@@ -365,15 +385,231 @@
 
                 </div>
             </div><!-- .page-bankruptcy-our-team -->
+
+
+
+            <div class="page-bankruptcy-results-of-work">
+                <div class="container">
+                    <div class="page-bankruptcy-results-of-work-list">
+                        <div class="page-bankruptcy-results-of-work-list-item">
+                            <div class="page-bankruptcy-results-of-work-list-item__title">
+                                <div class="page-bankruptcy-results-of-work-list-item__title_small">
+                                    Более
+                                </div>
+                                <div>
+                                    1 500
+                                </div>
+                                <div class="page-bankruptcy-results-of-work-list-item__title_small">
+                                    клиентов
+                                </div>
+                            </div>
+                            <div class="page-bankruptcy-results-of-work-list-item__text">
+                                Списали долги и
+                                <br>
+                                стали финансово
+                                <br>
+                                независимы
+                            </div>
+                        </div>
+                        <div class="page-bankruptcy-results-of-work-list-item">
+                            <div class="page-bankruptcy-results-of-work-list-item__title">
+                                <div class="page-bankruptcy-results-of-work-list-item__title_small">
+                                    Более
+                                </div>
+                                <div>
+                                    980
+                                </div>
+                                <div class="page-bankruptcy-results-of-work-list-item__title_small">
+                                    дел
+                                </div>
+                            </div>
+                            <div class="page-bankruptcy-results-of-work-list-item__text">
+                                Уже находятся в
+                                <br>
+                                арбитражном суде
+                                <br>
+                                на рассмотрении
+                            </div>
+                        </div>
+                        <div class="page-bankruptcy-results-of-work-list-item">
+                            <div class="page-bankruptcy-results-of-work-list-item__title">
+                                <div>
+                                    150
+                                </div>
+                                <div class="page-bankruptcy-results-of-work-list-item__title_small">
+                                    млн рублей
+                                </div>
+                            </div>
+                            <div class="page-bankruptcy-results-of-work-list-item__text">
+                                Сумма списанных
+                                <br>
+                                долгов наших
+                                <br>
+                                клиентов с момента
+                                <br>
+                                вступления в силу
+                                <br>
+                                закона о
+                                <br>
+                                банкротстве
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-bankruptcy-results-of-work-link-more">
+                        <a href="#">
+                            <div>
+                                Смотреть все
+                                <br>
+                                дела
+                                <br>
+                                <img src="images/link-more-arrow.svg" alt="Смотреть все дела">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div><!-- .page-bankruptcy-results-of-work -->
             
 
+
+            <div class="page-bankruptcy-by-yourself">
+                <div class="container">
+                    <div class="page-bankruptcy-by-yourself-title">
+                        Вы можете сами пройти процедуру банкротства,
+                        <br>
+                        но есть РИСК:
+                    </div>
+                    <div class="page-bankruptcy-by-yourself-list">
+                        <ul>
+                            <li>Нет никаких гарантий </li>
+                            <li>Фин. управляющие могут вынести решение не в вашу сторону</li>
+                            <li>Накапливаются пени и штрафы</li>
+                            <li>Постоянное моральное давление </li>
+                        </ul>
+                    </div>
+                    <div class="page-bankruptcy-by-yourself-we">
+                        <div class="page-bankruptcy-by-yourself-we__title">
+                            Мы даем гарантию результата:
+                        </div>
+                        <div class="page-bankruptcy-by-yourself-we__text">
+                            -Есть свои финансовые управляющие
+                            <br>
+                            -Юристы с опытом более 10 лет
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .page-bankruptcy-by-yourself -->
+
+
+
+            <div class="page-bankruptcy-keys">
+                <div class="container">
+                    <div class="page-bankruptcy-h2">
+                        Ключевые моменты при выборе
+                        <br>
+                        “проводника в банкротстве”
+                    </div>
+
+                    <div class="page-bankruptcy-keys-tabs">
+                        <div class="page-bankruptcy-keys-tabs-buttons">
+                            <div class="page-bankruptcy-keys-tabs-buttons-item page-bankruptcy-keys-tabs-buttons-item_active">
+                                <div class="page-bankruptcy-keys-tabs-buttons-item__num">
+                                    01
+                                </div>
+                                <div class="page-bankruptcy-keys-tabs-buttons-item__title">
+                                    Банкротство невозможно без участия финансового управляющего
+                                </div>
+                            </div>
+                            <div class="page-bankruptcy-keys-tabs-buttons-item">
+                                <div class="page-bankruptcy-keys-tabs-buttons-item__num">
+                                    02
+                                </div>
+                                <div class="page-bankruptcy-keys-tabs-buttons-item__title">
+                                    Соотношения работы юристов и фин. управляющих состоявляет 30/70 %
+                                </div>
+                            </div>
+                            <div class="page-bankruptcy-keys-tabs-buttons-item">
+                                <div class="page-bankruptcy-keys-tabs-buttons-item__num">
+                                    03
+                                </div>
+                                <div class="page-bankruptcy-keys-tabs-buttons-item__title">
+                                    Соотношения работы юристов и фин. управляющих состоявляет 30/70 %
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-bankruptcy-keys-tabs-content">
+                            <div class="page-bankruptcy-keys-tabs-content-item page-bankruptcy-keys-tabs-content-item_displaynone">
+                                <div class="page-bankruptcy-keys-tabs-content-item__text">
+                                    Это ключевая фигура в процессе. Большинство компаний будут убеждать, что финансового управляющего найти не проблема, его утвердит суд. Это глубочайшее заблуждение, в которое пытаются завести большое количество фирм по банкротству физических лиц.
+                                    <br>
+                                    <br>
+                                    <b>В компании “мое право” есть свои финансовые управляющие</b>
+                                </div>
+                                <div class="page-bankruptcy-keys-tabs-content-item__num">
+                                    01
+                                </div>
+                            </div>
+                            <div class="page-bankruptcy-keys-tabs-content-item page-bankruptcy-keys-tabs-content-item_displaynone">
+                                <div class="page-bankruptcy-keys-tabs-content-item__text">
+                                    Если Вы увидели слоган «банкротство под ключ от 5-10 тысяч рублей», то речь скорее всего идёт о ежемесячном платеже, в котором не учтены обязательные траты: госпошлина, депозит, публикации, почтовые расходы и т.п. (около 45 тысяч рублей минимум).
+                                </div>
+                                <div class="page-bankruptcy-keys-tabs-content-item__num">
+                                    02
+                                </div>
+                            </div>
+                            <div class="page-bankruptcy-keys-tabs-content-item page-bankruptcy-keys-tabs-content-item_displaynone">
+                                <div class="page-bankruptcy-keys-tabs-content-item__text">
+                                    Юристы от всего фронта работы в деле о банкротстве физического лица выполняют в среднем 20-30% всей работы, а остальное делает финансовый управляющий. Финансовый управляющий отвечает «своим статусом», а также законом для него предусмотрена административная и уголовная ответственность. Причем минимальный административный штраф для финансового управляющего за нарушения составляет 25 тысяч рублей. За неоднократные нарушения управляющий дисквалифицируется (лишается права осуществлять деятельность в течение определенного времени).
+                                </div>
+                                <div class="page-bankruptcy-keys-tabs-content-item__num">
+                                    03
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .page-bankruptcy-keys -->
+
+
+
+            <div class="page-bankruptcy-special-conditions">
+                <div class="container">
+                    <div class="page-bankruptcy-special-conditions-title">
+                        Обязательные условия для списания долга:
+                    </div>
+                    <div class="page-bankruptcy-special-conditions-list">
+                        <ul>
+                            <li>
+                                Ваш кредит должен быть без поручителей
+                            </li>
+                            <li>
+                                Ваш долг более 300 000 рублей
+                            </li>
+                            <li>
+                                У вас нет ипотеки и вы не являетесь созаемщиком
+                            </li>
+                            <li>
+                                У вас нет собственности, помимо основого жилья, от которого
+                                <br>
+                                вы не готовы отказаться
+                            </li>
+                            <li>
+                                У вас нет автокредита и нет авто в залоге
+                            </li>
+                            <li>
+                                Вы лично к нам обращаетесь
+                                <div class="page-bankruptcy-special-conditions-list_small">(если списание долгов нужно вашему родственнику или другу, то он должен обратиться лично)</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- .page-bankruptcy-special-conditions -->
 
         </main>
     </div>
 
 
 
-
+    
     <script src="js/main.js"></script>
 </body>
 </html>
