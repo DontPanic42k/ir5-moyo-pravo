@@ -33,9 +33,10 @@ $('.myform .myform-submit').on('click', function(e){
 
 
     if(error == false){
-        data = wrapper.serialize();
-        $.post("/js/sendmail.php", data, function(result){
+        data = wrapper.find(':input').serialize();
+        $.post("js/sendmail.php", data, function(result){
             // console.log(result);
+            // console.log(data);
             wrapper.css({
                 'display': 'flex',
                 'align-items': 'center',
