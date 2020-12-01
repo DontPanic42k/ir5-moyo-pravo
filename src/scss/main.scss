@@ -1,0 +1,491 @@
+body{
+    font: 12px/18px "Gilroy", "Arial", "Helvetica", sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+    height: 58px;
+    box-sizing: border-box;
+}
+
+.btn-orange{
+    position: relative;
+    z-index: 2;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.166666666666667;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: #FFFFFF !important;
+    background: #F08421;
+    transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1.0) 0s;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 5px;
+    
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+
+
+
+
+
+
+
+.page-bankruptcy-h2 {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1.177777777777778;
+    color: #131313;
+    margin-bottom: 0.7555555555555556em;
+}
+
+.page-bankruptcy-first {
+    background: url(../images/first-bg.jpg) no-repeat center center;
+    padding-top: 116px;
+    padding-bottom: 64px;
+    margin-bottom: 152px;
+}
+.page-bankruptcy-first .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+.page-bankruptcy-first-left {
+    // margin-right: 63px;
+		&__title {
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 1.216666666666667;
+            color: #006680;
+            margin-bottom: 0.6166666666666667em;
+		}
+
+		&__description {
+            font-size: 30px;
+            line-height: 1.166666666666667;
+            color: #131313;
+            margin-bottom: 2.633333333333333em;
+		}
+
+		&__button {
+		}
+}
+.page-bankruptcy-first-right {
+
+		&__ava {
+            // width: 469px;
+            margin-right: -60px;
+            img{
+                width: 100%;
+            }
+		}
+}
+.page-bankruptcy-profit {
+    margin-bottom: 180px;
+		&__description {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 1.166666666666667;
+            color: #7C7C7C;
+            margin-bottom: 56px;
+		}
+}
+
+.page-bankruptcy-profit-list {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.page-bankruptcy-profit-list-item {
+    width: calc(100% / 5 - 26px * 2 / 3);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+    padding-bottom: 21px;
+		&__ava {
+            height: 109px;
+            padding-top: 36px;
+            box-sizing: border-box;
+            img{
+                margin-left: auto;
+                margin-right: auto;
+            }
+		}
+
+		&__title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            text-align: center;
+            color: #006680;
+            margin-bottom: 7px;
+
+            .page-bankruptcy-profit-list-item_1 &{
+                // font-size: 16px;
+                font-size: 14.5px;
+                line-height: 1.1875;
+            }
+		}
+
+		&__description {
+            font-size: 14px;
+            line-height: 1.142857142857143;
+            text-align: center;
+            color: #7C7C7C;
+        }
+        
+        
+}
+.page-bankruptcy-profit-button {
+    text-align: center;
+    margin-top: 67px;
+}
+.page-bankruptcy-guarantees {
+    margin-bottom: 138px;
+}
+.page-bankruptcy-guarantees-list{
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.page-bankruptcy-guarantees-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+    padding-top: 51px;
+    padding-bottom: 51px;
+    padding-left: 44px;
+    padding-right: 44px;
+    box-sizing: border-box;
+    width: calc(100% / 2 - 39px * 1 / 2);
+    margin-bottom: 42px;
+
+		&__num {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 1.166666666666667;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            
+            color: #F08421;
+            margin-bottom: 0.8888888888888889em;
+		}
+
+		&__title {
+            font-weight: 600;
+            font-size: 35px;
+            line-height: 1.2;
+            color: #006680;
+            margin-bottom: 0.4571428571428571em;
+		}
+
+		&__description {
+            font-size: 24px;
+            line-height: 1.166666666666667;
+            color: #7C7C7C;
+		}
+}
+.page-bankruptcy-guarantees-item-special {
+    background: url(../images/ico-guarantees.svg) right 33px top 39px no-repeat #006680;
+        a{
+            display: flex;
+            justify-content: flex-start;
+            height: 100%;
+            
+            text-decoration: none;
+            transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1.0) 0s;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+		&__title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+            img{
+                margin-top: 6px;
+            }
+		}
+}
+.page-bankruptcy-your-role {
+    margin-bottom: 180px;
+}
+.page-bankruptcy-your-role-content {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    flex-wrap: wrap;
+}
+.page-bankruptcy-your-role-item {
+    width: 50%;
+    padding-bottom: 66px;
+    box-sizing: border-box;
+		&_left {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
+        }
+        
+        &_right {
+            background: #006680;
+            box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
+        }
+
+		&__title {
+            padding-top: 304px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 1.166666666666667;
+            color: #000000;
+            text-align: center;
+            margin-bottom: 1.233333333333333em;
+            .page-bankruptcy-your-role-item_right &{
+                color: #FFFFFF;
+            }
+		}
+
+		&__list {
+            margin-left: 29px;
+            ul{
+                list-style: none;
+                li{
+                    background: url(../images/bullet-no.svg) no-repeat left center;
+                    min-height: 20px;
+                    margin-bottom: 26px;
+                    padding-left: 34px;
+                    box-sizing: border-box;
+
+                    font-size: 20px;
+                    line-height: 1.15;
+                    color: #7C7C7C;
+                    
+                    .page-bankruptcy-your-role-item_right &{
+                        color: #83E6FF;
+                        background: url(../images/bullet-yes.svg) no-repeat left center;
+                    }
+                }
+            }
+        }
+        
+
+}
+.page-bankruptcy-your-role-button {
+    margin-top: 67px;
+    text-align: center;
+}
+.page-bankruptcy-form {
+    margin-bottom: 147px;
+    .container{
+        background: url(../images/form-bg.jpg) no-repeat center center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.page-bankruptcy-form-info {
+    padding-left: 70px;
+    box-sizing: border-box;
+		&__title {
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 1.177777777777778;
+            color: #006680;
+            margin-bottom: 0.7333333333333333em;
+		}
+
+		&__text {
+            font-size: 24px;
+            line-height: 1.166666666666667;
+            color: #000000;
+            // margin-bottom: 0.4166666666666667em;
+		}
+}
+.page-bankruptcy-form-inputs {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
+    border-radius: 5px;
+    margin-right: 78px;
+
+    width: 442px;
+    box-sizing: border-box;
+    padding-top: 57px;
+    padding-bottom: 64px;
+    padding-left: 51px;
+    padding-right: 57px;
+		&__title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 1.208333333333333;
+            text-align: center;
+            color: #006680;
+            margin-bottom: 1.708333333333333em;
+		}
+
+		&__input {
+            background: #FFFFFF !important;
+            border: 1px solid #BABABA !important;
+            border-radius: 5px !important;
+
+            font-weight: 600 !important;
+            font-size: 18px !important;
+            line-height: 1.166666666666667;
+            letter-spacing: 0.02em;
+
+            width: 100%;
+            height: 58px;
+            padding-left: 28px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+
+            &::placeholder{
+                font-size: 18px !important;
+                color: #C0C0C0;
+            }
+		}
+
+		&__submit {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+		}
+
+		&__description {
+            font-size: 14px;
+            line-height: 1.142857142857143;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: #6D6D6D;
+            margin-top: 35px;
+		}
+}
+.page-bankruptcy-aftermath {
+    margin-bottom: 179px;
+    .container{
+        background: #006680;
+        box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
+        box-sizing: border-box;
+        padding-top: 55px;
+        padding-bottom: 78px;
+        padding-left: 69px;
+        padding-right: 69px;
+    }
+		&__title {
+            font-weight: 500;
+            font-size: 45px;
+            line-height: 1.177777777777778;
+            color: #FFFFFF;
+            margin-bottom: 0.6em;
+		}
+
+		&__text {
+            font-size: 24px;
+            line-height: 1.166666666666667;
+            color: #FFFFFF;
+            margin-bottom: 2.958333333333333em;
+		}
+
+		&__lasttext {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 1.166666666666667;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 19px;
+		}
+
+		&__button {
+            text-align: center;
+		}
+}
+
+.page-bankruptcy-our-team {
+    margin-bottom: 50px;
+    .container {
+        
+    }
+}
+.page-bankruptcy-our-team-list {
+    display: flex;
+    // align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    overflow-x: scroll;
+}
+.page-bankruptcy-our-team-item {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
+    margin-right: 23px;
+    padding-top: 33px;
+    padding-bottom: 29px;
+    padding-left: 26px;
+    padding-right: 26px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+.page-bankruptcy-our-team-item-ava {
+    min-width: 212px;
+    margin-right: 31px;
+    img{
+        width: 100%;
+    }
+}
+.page-bankruptcy-our-team-item-info {
+    min-width: 376px;
+		&__name {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 1.208333333333333;
+            color: #131313;
+            margin-bottom: 0.1666666666666667em;
+		}
+
+		&__position {
+            font-size: 18px;
+            line-height: 1.166666666666667;
+            color: #717171;
+            margin-bottom: 1.722222222222222em;
+		}
+
+		&__text {
+            font-size: 18px;
+            line-height: 1.166666666666667;
+            color: #131313;
+
+            padding-top: 33px;
+            background: url(../images/quotes.svg) no-repeat left top;
+		}
+}
+
+
+
+
