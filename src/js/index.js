@@ -17,3 +17,4 @@ import '../js/tabs'
 
 
 import '../js/forms'
+import '../js/swiper-scripts'

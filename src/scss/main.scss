@@ -514,8 +514,57 @@ body{
 
 .page-bankruptcy-our-team {
     margin-bottom: 103px;
+    // margin-left: -40px;
     .container {
+    position: relative;
         
+    }
+
+    .swiper-container{
+        margin-left: -33px;
+    }
+
+    .swiper-wrapper{
+        padding-left: 33px;
+    }
+
+    .swiper-slide{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .swiper-button-prev{
+        width: 31px;
+        height: 23px;
+        background: url(../images/slider-arrow-left.svg) no-repeat center center;
+
+        position: absolute;
+        // top: 0;
+        right: 0;
+        left: auto;
+        margin-top: -150px;
+        margin-right: 60px;
+        z-index: 5;
+        &::after{
+            content: ' ';
+        }
+    }
+
+    .swiper-button-next{
+        width: 31px;
+        height: 23px;
+        background: url(../images/slider-arrow-right.svg) no-repeat center center;
+
+        position: absolute;
+        // top: 0;
+        right: 0;
+        left: auto;
+        margin-top: -150px;
+        margin-right: 0px;
+        z-index: 5;
+        &::after{
+            content: ' ';
+        }
     }
 }
 .page-bankruptcy-our-team-list {
@@ -523,8 +572,7 @@ body{
     // align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
-
-    overflow-x: scroll;
+    // overflow-x: scroll;
 }
 .page-bankruptcy-our-team-item {
     background: #FFFFFF;
