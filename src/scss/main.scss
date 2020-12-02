@@ -515,13 +515,16 @@ body{
 .page-bankruptcy-our-team {
     margin-bottom: 103px;
     // margin-left: -40px;
+    
     .container {
-    position: relative;
+        position: relative;
         
     }
 
     .swiper-container{
         margin-left: -33px;
+        overflow: visible;
+        // width: calc(50% + 190px);
     }
 
     .swiper-wrapper{
@@ -531,37 +534,53 @@ body{
     .swiper-slide{
         padding-top: 60px;
         padding-bottom: 60px;
+        width: 706px;
+    }
+
+    .swiper-nav-custom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: auto;
+        margin-top: 20px;
+        margin-right: 0px;
+
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+
+        color: #B2B2B2;
     }
 
     .swiper-button-prev{
+        margin-top: 0;
         width: 31px;
         height: 23px;
         background: url(../images/slider-arrow-left.svg) no-repeat center center;
 
-        position: absolute;
-        // top: 0;
-        right: 0;
+        position: relative;
         left: auto;
-        margin-top: -150px;
-        margin-right: 60px;
-        z-index: 5;
+        // z-index: 5;
         &::after{
             content: ' ';
         }
     }
 
     .swiper-button-next{
+        margin-top: 0;
         width: 31px;
         height: 23px;
         background: url(../images/slider-arrow-right.svg) no-repeat center center;
 
-        position: absolute;
-        // top: 0;
-        right: 0;
-        left: auto;
-        margin-top: -150px;
-        margin-right: 0px;
-        z-index: 5;
+        position: relative;
+        right: auto;
+        // z-index: 5;
         &::after{
             content: ' ';
         }
@@ -589,12 +608,15 @@ body{
     justify-content: center;
     flex-wrap: nowrap;
     
+    width: 706px;
 }
 .page-bankruptcy-our-team-item-ava {
     min-width: 212px;
     margin-right: 31px;
     img{
-        width: 100%;
+        // width: 100%;
+        height: 212px;
+        object-fit: cover;
     }
 }
 .page-bankruptcy-our-team-item-info {

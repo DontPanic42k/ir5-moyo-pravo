@@ -752,3 +752,29 @@
 
 }
 
+
+
+
+
+@media only screen and (max-width : 768px) {
+    .page-bankruptcy-our-team .swiper-button-prev,
+    .page-bankruptcy-our-team .swiper-button-next{
+        display: none;
+    }
+
+    .page-bankruptcy-our-team-item{
+        display: block;
+        width: auto;
+    }
+
+    .page-bankruptcy-our-team-item-ava{
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .page-bankruptcy-our-team-item-info{
+        min-width: 0;
+    }
+    
+}
