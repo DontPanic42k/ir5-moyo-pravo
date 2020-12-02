@@ -532,7 +532,7 @@ body{
     }
 
     .swiper-slide{
-        padding-top: 60px;
+        padding-top: 40px;
         padding-bottom: 60px;
         width: 706px;
     }
@@ -648,14 +648,97 @@ body{
 
 
 .page-bankruptcy-results-of-work {
+    background: url(../images/results-of-work-bg.jpg) no-repeat center center;
+    background-size: auto 100%;
+    padding-top: 98px;
+
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        
     }
 }
+
+
+.page-bankruptcy-results-of-work-docs-slider{
+    width: 100%;
+    position: relative;
+    margin-bottom: 88px;
+
+    a{
+        display: block;
+
+        .page-bankruptcy-results-of-work-docs-slider-image::before{
+            content: ' ';
+            display: block;
+            background: url(../images/ico-loupe.svg) no-repeat center center rgba(0, 0, 0, 0.39);;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1.0) 0s;
+        }
+        &:hover .page-bankruptcy-results-of-work-docs-slider-image::before{
+            opacity: 1;
+        }
+    }
+    &-image{
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    &-title{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.181818181818182;
+        text-align: left;
+        color: #FFFFFF;
+        margin-top: 0.7272727272727273em;
+    }
+
+    .swiper-button-prev{
+        box-sizing: border-box;
+        margin-top: -16px;
+        margin-left: -51px;
+        width: 31px;
+        min-width: 31px;
+        height: 23px;
+        background: url(../images/slider-arrow-left.svg) no-repeat center center;
+        &::after{
+            content: ' ';
+        }
+    }
+    
+    .swiper-button-next{
+        box-sizing: border-box;
+        margin-top: -16px;
+        margin-right: -51px;
+        width: 31px;
+        min-width: 31px;
+        height: 23px;
+        background: url(../images/slider-arrow-right.svg) no-repeat center center;
+
+        // position: relative;
+        // right: auto;
+        // z-index: 5;
+        &::after{
+            content: ' ';
+        }
+    }
+}
+
+
+
+
+
+
+
+
 .page-bankruptcy-results-of-work-list {
     display: flex;
     // align-items: center;
@@ -666,7 +749,8 @@ body{
 }
 .page-bankruptcy-results-of-work-list-item {
     width: calc(100% / 3 - 26px * 2 / 3);
-    background: #FFFFFF;
+    // background: #FFFFFF;
+    background: #064B5D;
     box-shadow: 0px 4px 39px rgba(0, 0, 0, 0.13);
     border-radius: 5px;
     padding-bottom: 21px;
@@ -679,7 +763,8 @@ body{
         display: block;
         width: 100%;
         height: 82px;
-        background: url(../images/profit-list-item-corner.png) no-repeat center top;
+        // background: url(../images/profit-list-item-corner.png) no-repeat center top;
+        background: url(../images/results-of-work-list-item-corner.png) no-repeat center top;
         background-size: 100% 100%;
         position: absolute;
         left: 0;
@@ -691,7 +776,8 @@ body{
             font-size: 50px;
             line-height: 1;
             letter-spacing: 0.02em;
-            color: #006680;
+            // color: #006680;
+            color: #FFFFFF;
             text-align: center;
 
 			&_small {
@@ -704,7 +790,8 @@ body{
             line-height: 1.166666666666667;
             text-align: center;
             letter-spacing: 0.02em;
-            color: #7C7C7C;
+            // color: #7C7C7C;
+            color: #B9B9B9;
             margin-top: 0.888888888888889em;
 		}
 }
@@ -826,7 +913,14 @@ body{
             line-height: 1.166666666666667;
 
             color: #FFFFFF;
-		}
+        }
+        
+        &__button{
+            position: absolute;
+            top: 50px;
+            right: 46px;
+            z-index: 5;
+        }
 }
 
 
@@ -946,19 +1040,21 @@ body{
     margin-bottom: 1.55em;
 }
 .page-bankruptcy-special-conditions-list {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.166666666666667;
-    color: #7C7C7C;
     margin-bottom: 1.041666666666667em;
     padding-bottom: 68px;
 
     ul{
         list-style: none;
         li{
-            background: url(../images/bullet-yes.svg) no-repeat left center;
-            padding-left: 43px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 1.166666666666667;
+            color: #7C7C7C;
+
+            background: url(../images/bullet-yes.svg) no-repeat left top 4px;
+            padding-left: 36px;
             box-sizing: border-box;
+            margin-bottom: 0.8em;
         }
     }
 		&_small {
@@ -987,6 +1083,76 @@ body{
         .msmall{
             font-size: 1em;
         }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-bankruptcy-call-to-action {
+    background: url(../images/block-last-bg.jpg) no-repeat center center;
+    background-size: auto 100%;
+    padding-top: 89px;
+    padding-bottom: 185px;
+    position: relative;
+
+    &::after{
+        content: ' ';
+        display: block;
+        width: 450px;
+        height: 473px;
+        background: url(../images/last-ava.png) no-repeat center bottom;
+
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        z-index: 5;
+        margin-left: -225px;
+    }
+    
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        // flex-wrap: nowrap;
+    }
+
+    .page-bankruptcy-form-inputs{
+        margin-top: 0;
+        margin-right: 0;
+        &::before{
+            display: none;
+        }
+    }
+
+
+
+}
+
+.page-bankruptcy-call-to-action-info {
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        color: #FFFFFF;
+        margin-bottom: 49px;
+    }
+
+    &__text {
+        font-size: 25px;
+        line-height: 1.16;
+        color: #D6D6D6;
+        max-width: 448px;
     }
 }
 

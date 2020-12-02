@@ -185,6 +185,18 @@
         margin-bottom: 100px;
     }
     
+
+    .page-bankruptcy-call-to-action::after{
+        display: none;
+    }
+
+    .page-bankruptcy-call-to-action-info__title{
+        font-size: 32px;
+    }
+
+    .page-bankruptcy-call-to-action-info__text{
+        font-size: 20px;
+    }
 }
 
 
@@ -272,7 +284,8 @@
         height: 178.2px;
         background-size: 100% 100%;
         top: -80.4px;
-        right: 34.2px;
+        // right: 34.2px;
+        right: 106px;
     }
 
     .page-bankruptcy-by-yourself-we__title{
@@ -298,6 +311,32 @@
     .page-bankruptcy-special-conditions-title{
         font-size: 36px;
     }
+
+
+
+
+    .page-bankruptcy-call-to-action{
+        
+    }
+
+    .page-bankruptcy-call-to-action .page-bankruptcy-form-inputs{
+        width: 400px;
+    }
+
+    .page-bankruptcy-call-to-action .page-bankruptcy-form-inputs::after{
+        display: block;
+    }
+
+    .page-bankruptcy-call-to-action-info__title{
+        font-size: 28px;
+    }
+
+    .page-bankruptcy-call-to-action-info__text{
+        font-size: 18px;
+    }
+
+
+
 
     
 }
@@ -334,6 +373,27 @@
 
     .page-bankruptcy-special-conditions .container{
         background: none;
+    }
+
+
+
+    .page-bankruptcy-call-to-action .page-bankruptcy-form-inputs{
+        width: 400px;
+    }
+
+    .page-bankruptcy-call-to-action-info__title{
+        font-size: 24px;
+    }
+
+    .page-bankruptcy-call-to-action-info__text{
+        font-size: 16px;
+    }
+
+    .page-bankruptcy-by-yourself-we__button{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
     }
     
 }
@@ -481,6 +541,28 @@
         margin-right: auto;
     }
     
+
+
+    .page-bankruptcy-call-to-action{
+        padding-top: 40px;
+        padding-bottom: 145px;
+    }
+
+    .page-bankruptcy-call-to-action .container{
+        display: block;
+    }
+
+    .page-bankruptcy-call-to-action .page-bankruptcy-form-inputs{
+        width: auto;
+        margin-left: 0;
+        margin-top: 60px;
+    }
+
+
+    .page-bankruptcy-by-yourself-we__button{
+        text-align: center;
+    }
+
 }
 
 
@@ -503,6 +585,10 @@
 
     .page-bankruptcy-first-left__button{
         text-align: center;
+    }
+
+    .page-bankruptcy-first-right{
+        display: none;
     }
 
     .page-bankruptcy-first-right__ava{
@@ -620,6 +706,12 @@
 
     .page-bankruptcy-special-conditions-list{
         font-size: 16px;
+    }
+
+
+
+    .page-bankruptcy-call-to-action-info__title{
+        font-size: 20px;
     }
 }
 
